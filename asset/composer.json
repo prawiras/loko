@@ -1,17 +1,12 @@
 {
-	
   "require": {
-    "cloudinary/cloudinary_php": "dev-master"
+    "cloudinary/cloudinary_php": "dev-master",
+    "ramsey/uuid": "^3.7",
+    "moontoast/math": "^1.1"
   },
-
   "autoload":{
 	    "psr-4":{
 	    "":""
 	  	}
   }
-
 }
-
-// untuk index
-// require __DIR__.'/asset/vendor/cloudinary/cloudinary_php/src/Cloudinary.php';
-// require __DIR__.'/asset/vendor/cloudinary/cloudinary_php/src/Uploader.php';

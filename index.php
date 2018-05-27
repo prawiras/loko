@@ -1,7 +1,12 @@
 <?php
+
+// untuk index
+// require __DIR__.'/asset/vendor/cloudinary/cloudinary_php/src/Cloudinary.php';
+// require __DIR__.'/asset/vendor/cloudinary/cloudinary_php/src/Uploader.php';
 require __DIR__.'/asset/vendor/autoload.php';
 require __DIR__.'/asset/config/Tgl_Indo.php';
 require __DIR__.'/asset/config/Pagination.php';
+
 if (file_exists('asset/config/Settings.php')) 
 {
 require __DIR__.'/asset/config/Settings.php';

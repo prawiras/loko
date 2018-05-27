@@ -7,7 +7,30 @@ namespace Composer\Autoload;
 class ComposerStaticInit7fca281b161b921222f4dbf8ecc1200b
 {
     public static $files = array (
+        '5255c38a0faeba867671b61dfda6d864' => __DIR__ . '/..' . '/paragonie/random_compat/lib/random.php',
         'c15243c55ab4c20eff78d1e24be20dac' => __DIR__ . '/..' . '/cloudinary/cloudinary_php/src/Helpers.php',
+    );
+
+    public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Ramsey\\Uuid\\' => 12,
+        ),
+        'M' => 
+        array (
+            'Moontoast\\Math\\' => 15,
+        ),
+    );
+
+    public static $prefixDirsPsr4 = array (
+        'Ramsey\\Uuid\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/ramsey/uuid/src',
+        ),
+        'Moontoast\\Math\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/moontoast/math/src/Moontoast/Math',
+        ),
     );
 
     public static $fallbackDirsPsr4 = array (
@@ -37,6 +60,8 @@ class ComposerStaticInit7fca281b161b921222f4dbf8ecc1200b
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->prefixLengthsPsr4 = ComposerStaticInit7fca281b161b921222f4dbf8ecc1200b::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit7fca281b161b921222f4dbf8ecc1200b::$prefixDirsPsr4;
             $loader->fallbackDirsPsr4 = ComposerStaticInit7fca281b161b921222f4dbf8ecc1200b::$fallbackDirsPsr4;
             $loader->classMap = ComposerStaticInit7fca281b161b921222f4dbf8ecc1200b::$classMap;
 

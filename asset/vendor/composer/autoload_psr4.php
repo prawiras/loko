@@ -6,5 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Ramsey\\Uuid\\' => array($vendorDir . '/ramsey/uuid/src'),
+    'Moontoast\\Math\\' => array($vendorDir . '/moontoast/math/src/Moontoast/Math'),
     '' => array($baseDir . '/'),
 );

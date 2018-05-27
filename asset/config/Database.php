@@ -4,9 +4,9 @@ use PDO;
 class Database extends PDO 
 {
 	private $host 		= 'localhost';
-	private $dbname 	= 'webpro';
 	private $username 	= 'dumet';
 	private $password 	= 'school';
+	private $dbname 	= 'webpro';
 
 	function __construct()
 	{
